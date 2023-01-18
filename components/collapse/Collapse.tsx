@@ -88,7 +88,10 @@ const Collapse: CompoundedComponent = (props) => {
       expandIcon ? (
         expandIcon(panelProps)
       ) : (
-        <RightOutlined rotate={panelProps.isActive ? 90 : undefined} aria-label={panelProps.isActive ? "down" : "right"} />
+        <RightOutlined
+          rotate={panelProps.isActive ? 90 : undefined}
+          aria-label={panelProps.isActive ? 'down' : 'right'}
+        />
       )
     ) as React.ReactNode;
 
